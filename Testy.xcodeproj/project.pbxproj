@@ -11,7 +11,20 @@
 		158E9E2B269DBE89008904B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E9E2A269DBE89008904B2 /* ContentView.swift */; };
 		158E9E2D269DBE89008904B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158E9E2C269DBE89008904B2 /* Assets.xcassets */; };
 		158E9E30269DBE89008904B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158E9E2F269DBE89008904B2 /* Preview Assets.xcassets */; };
+		158E9E3D269DBEC3008904B2 /* Testy_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E9E3C269DBEC3008904B2 /* Testy_Tests.swift */; };
+		158E9E44269DC05F008904B2 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E9E43269DC05F008904B2 /* ValidationService.swift */; };
+		158E9E46269DC318008904B2 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E9E45269DC318008904B2 /* LoginVM.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		158E9E3E269DBEC3008904B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 158E9E1D269DBE89008904B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 158E9E24269DBE89008904B2;
+			remoteInfo = Testy;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		158E9E25269DBE89008904B2 /* Testy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +32,21 @@
 		158E9E2A269DBE89008904B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		158E9E2C269DBE89008904B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		158E9E2F269DBE89008904B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		158E9E3A269DBEC3008904B2 /* Testy Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Testy Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		158E9E3C269DBEC3008904B2 /* Testy_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testy_Tests.swift; sourceTree = "<group>"; };
+		158E9E43269DC05F008904B2 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
+		158E9E45269DC318008904B2 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		158E9E22269DBE89008904B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158E9E37269DBEC3008904B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				158E9E27269DBE89008904B2 /* Testy */,
+				158E9E3B269DBEC3008904B2 /* Testy Tests */,
 				158E9E26269DBE89008904B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				158E9E25269DBE89008904B2 /* Testy.app */,
+				158E9E3A269DBEC3008904B2 /* Testy Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +81,8 @@
 				158E9E2A269DBE89008904B2 /* ContentView.swift */,
 				158E9E2C269DBE89008904B2 /* Assets.xcassets */,
 				158E9E2E269DBE89008904B2 /* Preview Content */,
+				158E9E43269DC05F008904B2 /* ValidationService.swift */,
+				158E9E45269DC318008904B2 /* LoginVM.swift */,
 			);
 			path = Testy;
 			sourceTree = "<group>";
@@ -65,6 +93,14 @@
 				158E9E2F269DBE89008904B2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		158E9E3B269DBEC3008904B2 /* Testy Tests */ = {
+			isa = PBXGroup;
+			children = (
+				158E9E3C269DBEC3008904B2 /* Testy_Tests.swift */,
+			);
+			path = "Testy Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +123,24 @@
 			productReference = 158E9E25269DBE89008904B2 /* Testy.app */;
 			productType = "com.apple.product-type.application";
 		};
+		158E9E39269DBEC3008904B2 /* Testy Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158E9E40269DBEC3008904B2 /* Build configuration list for PBXNativeTarget "Testy Tests" */;
+			buildPhases = (
+				158E9E36269DBEC3008904B2 /* Sources */,
+				158E9E37269DBEC3008904B2 /* Frameworks */,
+				158E9E38269DBEC3008904B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				158E9E3F269DBEC3008904B2 /* PBXTargetDependency */,
+			);
+			name = "Testy Tests";
+			productName = "Testy Tests";
+			productReference = 158E9E3A269DBEC3008904B2 /* Testy Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +153,10 @@
 				TargetAttributes = {
 					158E9E24269DBE89008904B2 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					158E9E39269DBEC3008904B2 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 158E9E24269DBE89008904B2;
 					};
 				};
 			};
@@ -116,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				158E9E24269DBE89008904B2 /* Testy */,
+				158E9E39269DBEC3008904B2 /* Testy Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +189,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		158E9E38269DBEC3008904B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +203,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158E9E46269DC318008904B2 /* LoginVM.swift in Sources */,
 				158E9E2B269DBE89008904B2 /* ContentView.swift in Sources */,
 				158E9E29269DBE89008904B2 /* TestyApp.swift in Sources */,
+				158E9E44269DC05F008904B2 /* ValidationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158E9E36269DBEC3008904B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158E9E3D269DBEC3008904B2 /* Testy_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		158E9E3F269DBEC3008904B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 158E9E24269DBE89008904B2 /* Testy */;
+			targetProxy = 158E9E3E269DBEC3008904B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		158E9E31269DBE89008904B2 /* Debug */ = {
@@ -321,6 +405,52 @@
 			};
 			name = Release;
 		};
+		158E9E41269DBEC3008904B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4WPNK427TB;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yakis.Testy-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Testy.app/Testy";
+			};
+			name = Debug;
+		};
+		158E9E42269DBEC3008904B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4WPNK427TB;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yakis.Testy-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Testy.app/Testy";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -338,6 +468,15 @@
 			buildConfigurations = (
 				158E9E34269DBE89008904B2 /* Debug */,
 				158E9E35269DBE89008904B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		158E9E40269DBEC3008904B2 /* Build configuration list for PBXNativeTarget "Testy Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158E9E41269DBEC3008904B2 /* Debug */,
+				158E9E42269DBEC3008904B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
